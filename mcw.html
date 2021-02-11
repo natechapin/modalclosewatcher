@@ -1,0 +1,7 @@
+<body>
+<script>
+let watcher = new ModalCloseWatcher();
+watcher.onbeforeclose = () => document.body.appendChild(document.createTextNode("onbeforeclose"));
+watcher.onclose = () => document.body.appendChild(document.createTextNode(("onclose"));
+</script>
+</body>
